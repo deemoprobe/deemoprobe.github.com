@@ -1,2 +1,2 @@
-# deemoprobe.github.com
+# deemoprobe.github.io
 deemoprobe's blog
