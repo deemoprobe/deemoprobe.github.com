@@ -2,49 +2,137 @@
   @Author: deemoprobe@gmail.com
   @Date:   2021-02-19 14:15:53
   @Last Modified by:   deemoprobe@gmail.com
-  @Last Modified time: 2021-02-19 16:26:00
+  @Last Modified time: 2021-02-19 16:39:25
 -->
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>deemoprobe's blog</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="utf-8">
+    <title>Deemoprobe's Blog</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/add.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="./assets/img/blog.png" />
+        <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
 </head>
 
-<body>
-	<div>
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<span class="icon fa-gem"></span>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<h1>欢迎访问我的博客</h1>
-					<p>业精于勤荒于嬉,行成于思毁于随.</p>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="https://deemoprobe.github.io/Kubernetes.html">Kubernetes</a></li>
-					<li><a href="#work">Middleware</a></li>
-					<li><a href="#about">Linux</a></li>
-					<li><a href="#contact">Tools</a></li>
-					<li><a href="#work">PenTest</a></li>
-					<li><a href="#about">Tips</a></li>
-					<li><a href="#about">about</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
+<body lang="en" class="default">
+    <div id="content">
+        <div id="titre">
+            <h1>
+                <span style="color: #93a1a1;">yann<span style="color:#002b36;">esposito</span>.com</span>
+            </h1>
+        </div>
+        <div class="flush"></div>
+        <div id="afterheader">
+            <style scoped>
+                h3,
+                h4 {
+                    border: none;
+                    box-shadow: none;
+                    margin-left: 0;
+                    padding-left: 0
+                }
+
+                h4 {
+                    text-decoration: underline;
+                    border: none;
+                    box-shadow: none;
+                }
+
+                .english,
+                .francais {
+                    width: 63%;
+                    float: right;
+                    text-align: left;
+                }
+
+                #enblog:hover:after {
+                    content: "full archive";
+                }
+
+                #frblog:hover:after {
+                    content: "archives complètes";
+                }
+
+                .social {
+                    font-size: 18px;
+                    display: inline-block;
+                    position: relative;
+                    bottom: -3px;
+                }
+
+                #logo {
+                    width: 10em;
+                    position: fixed;
+                }
+
+                .bottom {
+                    text-align: center;
+                    border: solid;
+                    box-shadow: 4px 4px #000;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    body {
+                        padding: 0 1em;
+                    }
+
+                    #logo {
+                        position: relative;
+                    }
+
+                    .english,
+                    .francais {
+                        width: 100%;
+                        float: none;
+                    }
+                }
+
+            </style>
+            <img class="clean" id="logo" style src="./assets/img/blog.png" alt="logo加载中..." />
+            <div class="corps" style="padding: 1em 0">
+                <div class="english">
+                    <h2>
+                        English
+                    </h2>
+                    <h3>
+                        <a href="./Scratch/en/blog" onclick="setLanguage('en')" id="enblog">
+                            Blog <span class="nicer">»</span>
+                        </a>
+                    </h3>
+                    <h4>Latest</h4>
+                    <div class="posts-list"><a href="./Scratch/en/blog/Helping-avoid-Haskell-Success/">
+                            Tips in avoiding Haskell Success at all cost<span class="nicer">&nbsp;»</span>
+                        </a><br />
+                        <a href="./Scratch/en/blog/Haskell-Tutorials--a-tutorial/">
+                            Haskell Tutorials, a tutorial<span class="nicer">&nbsp;»</span>
+                        </a><br />
+                        <a href="./Scratch/en/blog/Vim-as-IDE/">
+                            Vim as IDE<span class="nicer">&nbsp;»</span>
+                        </a><br />
+                    </div>
+
+                    <h4>Popular</h4>
+                    <div class="posts-list">
+                        <a href="Scratch/en/blog/Learn-Vim-Progressively">Learn Vim Progressively&nbsp;<span class="nicer">»</span></a><br />
+                        <a href="Scratch/en/blog/Haskell-the-Hard-Way">Learn Haskell Fast <span class="and">&amp;</span> Hard&nbsp;<span class="nicer">»</span></a><br />
+                        <a href="Scratch/en/blog/Yesod-tutorial-for-newbies">Haskell Web Programming<span class="nicer">»</span></a>
+                    </div>
+
+                    <h3><a href="./Scratch/en/softwares" onclick="setLanguage('en')"> Softwares <span class="nicer">»</span> </a></h3>
+                    <h3><a href="./Scratch/en/about" onclick="setLanguage('en')">Contact <span class="nicer">»</span> </a></h3>
+                    <h3> <a href="./Scratch/files/resume/resume.html">Resume <span class="nicer">»</span> </a> </h3>
+                </div>
+                <div class="flush"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
