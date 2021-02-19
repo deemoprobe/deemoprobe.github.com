@@ -5,7 +5,7 @@
   @Last Modified time: 2021-02-19 16:39:25
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="utf-8">
@@ -16,12 +16,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/add.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" href="./assets/img/blog.png" />
-        <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
         <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <![endif]-->
 </head>
 
-<body lang="en" class="default">
+<body lang="zh-CN" class="default">
     <div id="content">
         <div id="titre">
             <h1>
@@ -45,19 +45,19 @@
                     box-shadow: none;
                 }
 
-                .english,
-                .francais {
+                .chinese,
+                .english {
                     width: 63%;
                     float: right;
                     text-align: left;
                 }
 
-                #enblog:hover:after {
-                    content: "full archive";
+                #zhblog:hover:after {
+                    content: "所有分类";
                 }
 
-                #frblog:hover:after {
-                    content: "archives complètes";
+                #enblog:hover:after {
+                    content: "full archive";
                 }
 
                 .social {
@@ -87,8 +87,8 @@
                         position: relative;
                     }
 
-                    .english,
-                    .francais {
+                    .chinese,
+                    .english {
                         width: 100%;
                         float: none;
                     }
@@ -97,39 +97,53 @@
             </style>
             <img class="clean" id="logo" style src="./assets/img/blog.png" alt="logo加载中..." />
             <div class="corps" style="padding: 1em 0">
-                <div class="english">
-                    <h2>
-                        English
-                    </h2>
-                    <h3>
-                        <a href="./Scratch/en/blog" onclick="setLanguage('en')" id="enblog">
-                            Blog <span class="nicer">»</span>
-                        </a>
-                    </h3>
-                    <h4>Latest</h4>
-                    <div class="posts-list"><a href="./blog/Kubernetes.html">
-                            Tips in avoiding Haskell Success at all cost<span class="nicer">&nbsp;»</span>
-                        </a><br />
-                        <a href="./Scratch/en/blog/Haskell-Tutorials--a-tutorial/">
-                            Haskell Tutorials, a tutorial<span class="nicer">&nbsp;»</span>
-                        </a><br />
-                        <a href="./Scratch/en/blog/Vim-as-IDE/">
-                            Vim as IDE<span class="nicer">&nbsp;»</span>
-                        </a><br />
-                    </div>
-
-                    <h4>Popular</h4>
+                <div class="chinese">
+                    <h2>中文-努力|奋斗</h2>
+                    <h3><a href="./blog/zh" id="zhblog">博客 <span class="nicer">»</span></a></h3>
+                    <h3>最新文章</h3>
                     <div class="posts-list">
-                        <a href="Scratch/en/blog/Learn-Vim-Progressively">Learn Vim Progressively&nbsp;<span class="nicer">»</span></a><br />
-                        <a href="Scratch/en/blog/Haskell-the-Hard-Way">Learn Haskell Fast <span class="and">&amp;</span> Hard&nbsp;<span class="nicer">»</span></a><br />
-                        <a href="Scratch/en/blog/Yesod-tutorial-for-newbies">Haskell Web Programming<span class="nicer">»</span></a>
+                        <a href="https://deemoprobe.github.io/blog/Kubernetes.html?ws=none">Kubernetes基础知识01<span class="nicer">&nbsp;»</span></a><br />
+                        <a href="./blog/Kubernetes.html">Kubernetes基础知识01<span class="nicer">&nbsp;»</span></a><br />
+                        <a href="./blog/Kubernetes.html">Kubernetes基础知识01<span class="nicer">&nbsp;»</span></a><br />
                     </div>
 
-                    <h3><a href="./Scratch/en/softwares" onclick="setLanguage('en')"> Softwares <span class="nicer">»</span> </a></h3>
-                    <h3><a href="./Scratch/en/about" onclick="setLanguage('en')">Contact <span class="nicer">»</span> </a></h3>
-                    <h3> <a href="./Scratch/files/resume/resume.html">Resume <span class="nicer">»</span> </a> </h3>
+                    <h3><a href="./blog/softwares.html"> 软件 <span class="nicer">»</span> </a></h3>
+
+                    <h3><a href="./blog/wallpaper.html">壁纸 <span class="nicer">»</span> </a></h3>
+
+                    <h3> <a href="./blog/resume.html">关于 <span class="nicer">»</span> </a> </h3>
+
+                </div>
+
+                <div class="english">
+                    <h2>English-Learn|Go</h2>
+                    <h3><a href="./blog/en" onclick="setLanguage('en')" id="enblog">Blog <span class="nicer">»</span></a></h3>
+                    <h3>Latest</h3>
+                    <div class="posts-list">
+                        <a href="https://deemoprobe.github.io/blog/Kubernetes.html?ws=none">Kubernetes base01<span class="nicer">&nbsp;»</span></a><br />
+                        <a href="./blog/Kubernetes.html">Kubernetes base01<span class="nicer">&nbsp;»</span></a><br />
+                        <a href="./blog/Kubernetes.html">Kubernetes base01<span class="nicer">&nbsp;»</span></a><br />
+                    </div>
+
+                    <h3><a href="./blog/softwares.html"> Softwares <span class="nicer">»</span> </a></h3>
+
+                    <h3><a href="./blog/wallpaper.html">Wallpaper <span class="nicer">»</span> </a></h3>
+
+                    <h3> <a href="./blog/about.html">About <span class="nicer">»</span> </a> </h3>
+
                 </div>
                 <div class="flush"></div>
+                <div class="bottom">
+                    <div class="github-badge">
+                        <a href="#" title="©2021 deemoprobe">
+                            <span class="badge-subject">Copyright</span><span class="badge-value bg-blue">©2021 deemoprobe</span>
+                        </a>|
+                        <a href="http://www.miitbeian.gov.cn/" target="_blank" title="皖ICP备 19001285号-2">
+                            <span class="badge-subject">皖ICP备</span><span class="badge-value bg-green">19001285号-2</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
