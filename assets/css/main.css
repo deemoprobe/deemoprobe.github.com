@@ -2,7 +2,7 @@
  * @Author: deemoprobe@gmail.com
  * @Date:   2021-02-19 14:54:15
  * @Last Modified by:   deemoprobe@gmail.com
- * @Last Modified time: 2021-02-19 14:54:26
+ * @Last Modified time: 2021-02-19 16:06:32
  */
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
@@ -100,9 +100,6 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #46332c;
-	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -1180,10 +1177,6 @@ input, select, textarea {
 			-webkit-filter: blur(0.2rem);
 			-ms-filter: blur(0.2rem);
 			filter: blur(0.2rem);
-		}
-
-		body.is-preload #bg:before {
-			background-color: #000000;
 		}
 
 /* Wrapper */
