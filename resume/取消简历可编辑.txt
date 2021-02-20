@@ -1,0 +1,5 @@
+修改static/js下的script.js文件，删除该文件下的所有内容，然后加上下面这一句
+
+$(document).ready(function($){
+    $("*").removeAttr('contenteditable');        
+})
